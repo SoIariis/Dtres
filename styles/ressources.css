@@ -1,0 +1,103 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.tools {
+    flex: 1;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.logo-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tool-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tool-logos img {
+    width: 150px; /* Augmenter la taille */
+    height: 150px; /* Increase the size */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background-color: rgb(236, 236, 236);
+}
+
+.tool-logos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.tooltiptext {
+    position: relative;
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    bottom: -35px; /* Position the tooltip below the image */
+    right: 38%; /* Center the tooltip */
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.game-files{
+    flex: 1;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 10%;
+}
+
+.game-files ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.game-files li {
+    flex: 1 1 calc(25% - 1rem); /* 25% width minus the gap */
+    margin-bottom: 1rem;
+}
+
+.game-files a {
+    text-decoration: none;
+    background-color: rgb(236, 236, 236);
+    color: #131313;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+}
+
+.game-files a:hover {
+    color: #00adb5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

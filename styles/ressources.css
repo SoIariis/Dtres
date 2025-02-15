@@ -26,8 +26,8 @@
 }
 
 .tool-logos img {
-    width: 150px; /* Augmenter la taille */
-    height: 150px; /* Increase the size */
+    width: 150px;
+    height: 150px;
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -49,8 +49,8 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    bottom: -35px; /* Position the tooltip below the image */
-    right: 38%; /* Center the tooltip */
+    /* bottom: -35px;  */
+    right: 38%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -61,13 +61,20 @@
     opacity: 1;
 }
 
-
-.game-files{
+.game-files {
     flex: 1;
     margin: 2rem;
     padding: 2rem;
     border-radius: 12px;
-    margin-top: 10%;
+}
+
+.category {
+    margin-bottom: 2rem;
+}
+
+.category h2 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .game-files ul {
@@ -80,24 +87,34 @@
 }
 
 .game-files li {
-    flex: 1 1 calc(25% - 1rem); /* 25% width minus the gap */
+    flex: 1 1 calc(33% - 1rem); /* Augmenter la taille des cartes */
     margin-bottom: 1rem;
 }
 
 .game-files a {
     text-decoration: none;
     background-color: rgb(236, 236, 236);
-    color: #131313;
+    color: #dfdfdf;
     font-size: 1.2rem;
     transition: color 0.3s, transform 0.3s;
-    padding: 10px;
+    padding: 20px; /* Augmenter le padding pour agrandir les cartes */
     border-radius: 8px;
     display: block;
     text-align: center;
+    background: linear-gradient(135deg, #009ab5ad 0%, #007cb5af 100%); /* Ajouter un joli fond */
 }
 
 .game-files a:hover {
-    color: #00adb5;
+    color: #1d1d1d;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.no-category {
+    text-align: center; /* Centrer le contenu */
+}
+
+.no-category ul {
+    width: 50%;
+    margin: 0 auto; /* Centrer la liste */
 }

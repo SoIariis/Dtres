@@ -1,5 +1,5 @@
 let currentIndex = 1;
-const totalItems = 2;
+const totalItems = 5;
 const intervalTime = 10000;
 
 setInterval(() => {
@@ -8,7 +8,7 @@ setInterval(() => {
     document.getElementById(`carousel-${currentIndex}`).checked = true;
 }, intervalTime);
 
-
+// ...le reste du code...
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();

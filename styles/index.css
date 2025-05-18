@@ -98,7 +98,7 @@
 .carousel-item img {
   display: block;
   height: 92%;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -135,12 +135,21 @@
   color: #aaaaaa;
 }
 
+#carousel-1:checked ~ .carousel-item:nth-of-type(1),
+#carousel-2:checked ~ .carousel-item:nth-of-type(2),
+#carousel-3:checked ~ .carousel-item:nth-of-type(3),
+#carousel-4:checked ~ .carousel-item:nth-of-type(4),
+#carousel-5:checked ~ .carousel-item:nth-of-type(5) {
+    position: static;
+    opacity: 1;
+}
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-  display: block;
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5 {
+    display: block;
 }
-
 .carousel-indicators {
   list-style: none;
   margin: 0;
@@ -171,7 +180,9 @@
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
   color: #428bca;
 }
 

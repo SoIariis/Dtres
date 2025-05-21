@@ -1,5 +1,5 @@
 let currentIndex = 1;
-const totalItems = 5;
+const totalItems = 3;
 const intervalTime = 8000;
 let carouselTimeout;
 
